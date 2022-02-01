@@ -2,11 +2,6 @@ import React from 'react'
 
 import Task from './Task'
 
-export default {
-  component: Task,
-  title: 'Task',
-}
-
 const Template = (args) => <Task {...args} />
 
 export const Default = Template.bind({})
@@ -34,3 +29,9 @@ Archived.args = {
     state: 'TASK_ARCHIVED',
   },
 }
+
+const config = {
+  component: Task,
+  title: 'Task',
+}
+export default config
